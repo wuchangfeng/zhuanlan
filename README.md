@@ -9,7 +9,7 @@
 另外,因为知乎专栏官方没有提供提供接口,接口的数据均为非法所得。只供学习，请勿做他用。
 
 ## ScreenShot
-**[更多截图请看这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
+**[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
 
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/1%20(2).png)
 ![](https://github.com/wuchangfeng/ZhuanLan/blob/master/ScreenShot/2.png)
