@@ -9,6 +9,15 @@
 
 另外,因为知乎专栏官方没有提供提供接口,接口的数据均为非法所得。只供学习，请勿做他用。
 
+## Sample
+
+[戳这里下载 APK](http://fir.im/nrph)
+
+## Change Log
+  
+* 1.0.0 first publish
+* 1.0.1 fix bug & add todo list 
+
 ## ScreenShot
 **[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
 
