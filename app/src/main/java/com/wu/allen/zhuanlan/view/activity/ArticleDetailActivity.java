@@ -124,4 +124,6 @@ public class ArticleDetailActivity extends BaseActivity {
                 + "</body>\n</html>";
         webView.loadData(html,"text/html; charset=UTF-8", null);
     }
+
+
 }

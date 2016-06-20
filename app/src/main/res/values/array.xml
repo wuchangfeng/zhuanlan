@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="todo_item" >
+        <item>模式切换</item>
+        <item>缓存清理</item>
+        <item>专栏内容加上缓存</item>
+        <item>专栏文章评论接口的实现</item>
+        <item>专栏文章作者圆角头像的实现</item>
+        <item>专栏文章分享功能的实现</item>
+    </string-array>
+
+</resources>

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import com.wu.allen.zhuanlan.R;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +27,5 @@ public class AboutActivity extends AppCompatActivity {
         collapsingToolbar.setTitle("关于");
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //getMenuInflater().inflate(R.menu.menu_about_app, menu);
-        return true;
-    }
-
 }
 

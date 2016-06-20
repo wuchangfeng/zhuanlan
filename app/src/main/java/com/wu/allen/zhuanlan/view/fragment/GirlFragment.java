@@ -94,22 +94,23 @@ public class GirlFragment extends BaseFragment {
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.e("Main",e.getMessage());
+                        Log.e(TAG,e.getMessage());
                     }
 
                     @Override
                     public void onNext(List<Item> items) {
                         girlAdapter.addAll(items);
                     }
-                },page*10);
+                },page);
     }
-    // some bug here
+    // Load and Refresh data
     @Override
     public void onRefresh() {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 // before refresh clean cache
+                girlAdapter.clear();
                 Data.getInstance().clearMemoryAndDiskCache();
                 getGirlData(page);
 

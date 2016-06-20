@@ -27,16 +27,15 @@ public class Database {
     //System.out.println()
 
     private Database() {
-        Log.e("App.getInstance()",App.getInstance().getFilesDir().toString());
+
     }
 
     public static Database getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new Database();
-            Log.e("TAG","getInstance");
+
         }
-        Log.e("App.getInstance()",App.getInstance().getFilesDir().toString());
-        Log.e("TAG","getInstance1");
+
         return INSTANCE;
     }
 
@@ -49,7 +48,7 @@ public class Database {
         }
 
         try {
-            Log.e("TAG","read");
+
             Reader reader = new FileReader(dataFile);
             return gson.fromJson(reader, new TypeToken<List<Item>>(){}.getType());
         } catch (FileNotFoundException e) {

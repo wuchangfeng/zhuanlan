@@ -5,7 +5,9 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.util.ToastUtil;
@@ -36,7 +38,15 @@ public class BaseActivity extends AppCompatActivity implements SwipeRefreshLayou
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            ToastUtil.showLong(BaseActivity.this,"Wait");
+            new MaterialDialog.Builder(this)
+                    .title(R.string.dialog_title)
+                    .items(R.array.todo_item)
+                    .itemsCallback(new MaterialDialog.ListCallback() {
+                        @Override
+                        public void onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
+                        }
+                    })
+                    .show();
         }else if (id == R.id.action_about){
             Intent intent = new Intent(getApplicationContext(),AboutActivity.class);
             startActivity(intent);

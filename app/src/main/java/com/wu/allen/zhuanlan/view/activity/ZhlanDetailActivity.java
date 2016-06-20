@@ -11,14 +11,18 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.adapter.ArticleAdapter;
 import com.wu.allen.zhuanlan.model.Article;
 import com.wu.allen.zhuanlan.net.Network;
+import com.wu.allen.zhuanlan.util.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -156,4 +160,24 @@ public class ZhlanDetailActivity extends BaseActivity {
         articleAdapter.clear();
         getArticleData(slug,5,0);
     }
+
+    // override
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_share) {
+            ToastUtil.showLong(getApplicationContext(),"wait me");
+        }else if (id == android.R.id.home){
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

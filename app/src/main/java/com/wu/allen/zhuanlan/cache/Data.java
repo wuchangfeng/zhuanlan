@@ -28,6 +28,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 import rx.subjects.BehaviorSubject;
 public class Data {
+    private static final String TAG = "MeiziData";
     private static Data instance;
     // BehaviorSubject 只打印出最后一个数据
     BehaviorSubject<List<Item>> cache;
@@ -42,9 +43,9 @@ public class Data {
     }
     // 从网络加载数据
     public void loadFromNetwork(final int page) {
-        Log.e("Data","loadFromNetwork() is ok");
+        Log.e(TAG,page + "");
         Network.getGankApi()
-                .getBeauties(page, 1)
+                .getBeauties(10, page)
                 .subscribeOn(Schedulers.io())
                 // Observable 返回的类型 GankBeautyResult Map 转换成 List<Map>
                 .map(new Func1<Girl, List<Item>>() {
@@ -66,7 +67,6 @@ public class Data {
                             item.imageUrl = gankBeauty.url;
                             items.add(item);
                         }
-                        Log.e("Data","Map data is ok");
                         return items;
                     }
                 })
@@ -94,7 +94,7 @@ public class Data {
     }
     // 获取数据
     public Subscription subscribeData(@NonNull Observer<List<Item>> observer,final int number) {
-        Log.e("Data",number+ "");
+
         if (cache == null ) {
             cache = BehaviorSubject.create();
             Observable.create(new Observable.OnSubscribe<List<Item>>() {
