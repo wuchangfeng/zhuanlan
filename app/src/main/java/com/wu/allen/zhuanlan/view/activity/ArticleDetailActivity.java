@@ -40,9 +40,7 @@ public class ArticleDetailActivity extends BaseActivity {
         initView();
         loadView();
     }
-
-
-
+    // InitView
     public void initView(){
         webView = (WebView) findViewById(R.id.wb_main);
         imageView = (ImageView) findViewById(R.id.iv_article);
@@ -60,8 +58,6 @@ public class ArticleDetailActivity extends BaseActivity {
         mCollapsingToolbarLayout.setExpandedTitleColor(Color.WHITE);//设置还没收缩时状态下字体颜色
         mCollapsingToolbarLayout.setCollapsedTitleTextColor(Color.GREEN);//设置收缩后Toolbar上字体的颜色
     }
-
-
     // Get data from ZhanlanDetailActivity
     public void getData() {
         Intent intent = getIntent();

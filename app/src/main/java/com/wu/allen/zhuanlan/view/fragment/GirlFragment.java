@@ -49,8 +49,7 @@ public class GirlFragment extends BaseFragment {
         initView(view);
         return view;
     }
-
-
+    // initView
     public void initView(View view){
         recyclerView = (EasyRecyclerView) view.findViewById(R.id.recycler_view);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
@@ -85,7 +84,7 @@ public class GirlFragment extends BaseFragment {
             }
         });
     }
-    // **** Here get data from cache or net
+    // Here get data from cache or net
     private void getGirlData(int page) {
         unsubscribe();
         subscription = Data.getInstance()
@@ -104,7 +103,7 @@ public class GirlFragment extends BaseFragment {
                     }
                 },page*10);
     }
-    // so bug here
+    // some bug here
     @Override
     public void onRefresh() {
         handler.postDelayed(new Runnable() {

@@ -64,7 +64,7 @@ public class ZhihuFragment extends BaseFragment {
         initView(view);
         return view;
     }
-
+    // initView
     public void initView(View view){
 
         final FloatingActionButton fab = (FloatingActionButton)view.findViewById(R.id.fab);
@@ -75,7 +75,7 @@ public class ZhihuFragment extends BaseFragment {
                 animator.setTarget(fab);
                 animator.setInterpolator(new CycleInterpolator(2));
                 animator.start();
-                // 这里的逻辑还没清楚
+                // bug here still
                 changeTopic();
                 onRefresh();
             }
@@ -88,12 +88,10 @@ public class ZhihuFragment extends BaseFragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         zhuanLanAdapter = new ZhuanLanAdapter(getActivity());
         doWithZhuanLan(zhuanLanAdapter);
-
-
         recyclerView.setRefreshListener(this);
         onRefresh();
     }
-
+    // Because of Api , there is a Skill
     private void changeTopic() {
         int max=3;
         int min=0;
@@ -102,7 +100,7 @@ public class ZhihuFragment extends BaseFragment {
 
         ids = TopicData.life_talks_ids;
     }
-
+    // Intent to ZhlanDetailActivity
     private void doWithZhuanLan(final RecyclerArrayAdapter<ZhuanLan> adapter) {
         recyclerView.setAdapterWithProgress(adapter);
         adapter.setMore(R.layout.load_more_layout,this);

@@ -3,6 +3,7 @@ package com.wu.allen.zhuanlan.util;
 /**
  * Created by allen on 2016/6/18.
  */
+// Beacause of ZHihu API,some constant write here
 public class TopicData {
 
     public static String  music_film_ids[] = {"zhimovie","Battlestar","tianmaying","48zhen",

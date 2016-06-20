@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity {
         switchToFragmnent();
         isNetOk();
     }
-    // network is ok
+    // Judge network is ok
     public void isNetOk(){
         if(!NetWorkUtil.isNetworkConnected(getApplicationContext())){
             SnackbarManager.show(

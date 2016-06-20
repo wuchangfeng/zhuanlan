@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
  * Created by allen on 2016/6/19.
  */
 public class NetWorkUtil {
+    // NetWork is ok?
     public static boolean isNetworkConnected(Context context) {
         if (context != null) {
             ConnectivityManager mConnectivityManager = (ConnectivityManager) context
@@ -19,7 +20,7 @@ public class NetWorkUtil {
         }
         return false;
     }
-
+    // WIFI is ok?
     public static boolean isWifiConnected(Context context) {
         if (context != null) {
             ConnectivityManager mConnectivityManager = (ConnectivityManager) context
