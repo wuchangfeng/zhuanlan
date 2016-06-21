@@ -17,9 +17,11 @@
   
 * 1.0.0 first publish
 * 1.0.1 fix bug & add todo list 
+* 1.0.2 add profile_url & name in ZhlanDetailActivity & add statement in Aboutactivity & change desc in GirlActivity
 
 ## ScreenShot
 **[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
+**截图不是最新版本,最新版本会及时在 Smaple 中发布**
 
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/1%20(2).png)
 ![](https://github.com/wuchangfeng/ZhuanLan/blob/master/ScreenShot/2.png)
@@ -31,11 +33,13 @@
 
 ## Thanks
 
-[GankGirl](https://github.com/gaolonglong/GankGirl)
+* [GankGirl](https://github.com/gaolonglong/GankGirl)
 
-[给 Android 开发者的 RxJava 详解以及相关 Demo](https://gank.io/post/560e15be2dca930e00da1083)
+* [知乎专栏 API 分析](https://marktony.github.io/2016/05/14/%E7%9F%A5%E4%B9%8E%E4%B8%93%E6%A0%8FAPI%E5%88%86%E6%9E%90/)
 
-[知乎专栏 API 分析](https://marktony.github.io/2016/05/14/%E7%9F%A5%E4%B9%8E%E4%B8%93%E6%A0%8FAPI%E5%88%86%E6%9E%90/)
+* [给 Android 开发者的 RxJava 详解以及相关 Demo](https://gank.io/post/560e15be2dca930e00da1083)
+
+
 
 
 
