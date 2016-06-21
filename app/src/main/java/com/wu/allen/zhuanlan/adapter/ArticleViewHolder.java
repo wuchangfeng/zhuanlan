@@ -32,8 +32,8 @@ public class ArticleViewHolder extends BaseViewHolder<Article> {
     @Override
     public void setData(Article data) {
         super.setData(data);
-        tvAuthor.setText(data.getSlug() );
-        tvComment.setText(data.getCommentsCount() + "评论");
+        tvAuthor.setText(data.getSlug() +" "+"发布了文章" );
+        tvComment.setText(data.getCommentsCount() +" "+"评论");
         tvTitle.setText(data.getTitle());
 
         Glide.with(getContext())

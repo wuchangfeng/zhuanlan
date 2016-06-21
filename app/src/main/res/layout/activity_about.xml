@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="个人一个练手 App,主要学习 RxJava 和 Retrofit 以及基于 RxJava 的缓存技术以及一些常用开源库的使用。\n"
+                android:text="@string/app_about"
                 android:background="#FFFFFF"
                 android:padding="10dp"
                 android:lineSpacingExtra="6dp"
@@ -78,7 +78,16 @@
 
 
             <TextView
-                android:text="App 中的知乎专栏 API 为并非由知乎官方提供，侵权删。妹子图的 API 来自 Gank.io。\n感谢。"
+                android:text="@string/data_state"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:lineSpacingExtra="6dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/open_source"
                 android:background="#FFFFFF"
                 android:padding="10dp"
                 android:lineSpacingExtra="6dp"

@@ -10,6 +10,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.transition.Fade;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -54,7 +55,6 @@ public class ZhlanDetailActivity extends BaseActivity {
         getData();
         initView();
     }
-
     // Animated transitions
     public void beforeInitView(){
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
@@ -69,15 +69,13 @@ public class ZhlanDetailActivity extends BaseActivity {
     }
     // initView
     public void initView() {
-
         articleList = new ArrayList<>();
         recyclerView = (EasyRecyclerView) findViewById(R.id.recycler_view);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_white_24dp);
-        //getSupportActionBar().setTitle(desc);
-
+        getSupportActionBar().setTitle(slug);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         articleAdapter = new ArticleAdapter(getApplicationContext());
@@ -111,7 +109,6 @@ public class ZhlanDetailActivity extends BaseActivity {
                 .subscribe(new Subscriber<List<Article>>() {
                     @Override
                     public void onCompleted() {
-                        Log.e(TAG,"onCompleted");
                     }
 
                     @Override
@@ -131,7 +128,9 @@ public class ZhlanDetailActivity extends BaseActivity {
             String title = article.get(i).getTitle();
             String content = article.get(i).getContent();
             titleImage = article.get(i).getTitleImage();
+            // no data why?
             String sumary = article.get(i).getSummary();
+            Log.e(TAG,"Sumary"+sumary);
             int commentsCount = article.get(i).getCommentsCount();
             // no use
             int likesCount =article.get(i).getLikeCount();

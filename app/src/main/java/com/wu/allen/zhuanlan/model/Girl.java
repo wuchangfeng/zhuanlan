@@ -14,7 +14,7 @@ public class Girl {
     List<GirlResult> girlResults;
 
     public static class GirlResult{
-        public String createdAt;
+        public String desc;
         public String url;
     }
 }

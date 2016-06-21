@@ -53,17 +53,9 @@ public class Data {
                     public List<Item> call(Girl girl) {
                         List<Girl.GirlResult> gankBeauties = girl.girlResults;
                         List<Item> items = new ArrayList<>(gankBeauties.size());
-                        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SS'Z'");
-                        SimpleDateFormat outputFormat = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
                         for (Girl.GirlResult gankBeauty : gankBeauties) {
                             Item item = new Item();
-                            try {
-                                Date date = inputFormat.parse(gankBeauty.createdAt);
-                                item.description = outputFormat.format(date);
-                            } catch (ParseException e) {
-                                e.printStackTrace();
-                                item.description = "unknown date";
-                            }
+                            item.description = gankBeauty.desc;
                             item.imageUrl = gankBeauty.url;
                             items.add(item);
                         }

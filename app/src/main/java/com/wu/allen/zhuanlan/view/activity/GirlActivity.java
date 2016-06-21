@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
 import android.view.Menu;
@@ -18,6 +19,7 @@ import com.bumptech.glide.request.target.SimpleTarget;
 import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.model.Girl;
 import com.wu.allen.zhuanlan.util.ImgSaveUtil;
+import com.wu.allen.zhuanlan.util.ImgShareUtil;
 import com.wu.allen.zhuanlan.util.ToastUtil;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -93,9 +95,11 @@ public class GirlActivity extends BaseActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_save) {
-            ImgSaveUtil.saveImage(GirlActivity.this,url,bitmap,image,"saveImg");
+            //ImgSaveUtil.saveImage(GirlActivity.this,url,bitmap,image,"saveImg");
+            //Snackbar.make(GirlActivity.this,"bug here in android 6.0",Snackbar.LENGTH_SHORT).show();
+            ToastUtil.showLong(this,"bug here in android 6.0");
         }else if (id == R.id.action_share){
-            ToastUtil.showLong(GirlActivity.this,"share");
+            ImgShareUtil.shareImage(this,ImgSaveUtil.saveImage(this,url,bitmap,image,"share"));
         }else if (id == android.R.id.home){
             onBackPressed();
         }

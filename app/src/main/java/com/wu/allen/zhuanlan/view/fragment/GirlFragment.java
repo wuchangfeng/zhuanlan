@@ -19,7 +19,7 @@ import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.adapter.GirlAdapter;
 import com.wu.allen.zhuanlan.cache.Data;
 import com.wu.allen.zhuanlan.model.Item;
-import com.wu.allen.zhuanlan.util.DpToPxUtil;
+import com.wu.allen.zhuanlan.util.Dp2PxUtil;
 import com.wu.allen.zhuanlan.view.activity.GirlActivity;
 
 import java.util.List;
@@ -58,7 +58,7 @@ public class GirlFragment extends BaseFragment {
         girlAdapter = new GirlAdapter(getActivity());
         doWithGirl(girlAdapter);
         // for itemDecoration
-        SpaceDecoration itemDecoration = new SpaceDecoration((int) DpToPxUtil.convertDpToPixel(8,getActivity()));
+        SpaceDecoration itemDecoration = new SpaceDecoration((int) Dp2PxUtil.convertDpToPixel(8,getActivity()));
         itemDecoration.setPaddingEdgeSide(true);
         itemDecoration.setPaddingStart(true);
         itemDecoration.setPaddingHeaderFooter(false);

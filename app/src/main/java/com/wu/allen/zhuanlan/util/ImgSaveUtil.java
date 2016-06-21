@@ -37,8 +37,6 @@ public class ImgSaveUtil {
             try {
                 FileOutputStream fos = new FileOutputStream(imageFile);
                 boolean compress = bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
-
-                Log.e("SaveImg","4");
                 Snackbar.make(imageView,"妹纸已经躺在你的图库里啦.. ( ＞ω＜)",Snackbar.LENGTH_SHORT).show();
 
                 fos.flush();

@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 /**
  * Created by allen on 2016/6/14.
  */
-public class DpToPxUtil {
+public class Dp2PxUtil {
     /**
      * This method converts dp unit to equivalent pixels, depending on device density.
      *
