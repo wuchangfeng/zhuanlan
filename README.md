@@ -27,8 +27,6 @@
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/12.png)
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/11.png)
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/15.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/13.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/14.png)
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/16.png)
 ![](http://7xrl8j.com1.z0.glb.clouddn.com/17.png)
 
