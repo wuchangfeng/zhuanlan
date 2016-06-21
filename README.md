@@ -11,7 +11,7 @@
 
 ## Sample
 
-[戳这里下载 APK](http://fir.im/nrph)
+[戳这里下载 APK](http://fir.im/ZhuanLan)
 
 ## Change Log
   
@@ -45,5 +45,5 @@
 
 
 
-##  Licence
+##  License
 MIT
