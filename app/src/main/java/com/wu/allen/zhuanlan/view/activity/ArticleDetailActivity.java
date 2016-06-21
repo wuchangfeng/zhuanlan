@@ -8,16 +8,21 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.bumptech.glide.Glide;
 import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.model.ArticleDetail;
 import com.wu.allen.zhuanlan.model.ZhuanLan;
 import com.wu.allen.zhuanlan.net.Network;
+import com.wu.allen.zhuanlan.util.ToastUtil;
 
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
@@ -124,6 +129,35 @@ public class ArticleDetailActivity extends BaseActivity {
                 + "</body>\n</html>";
         webView.loadData(html,"text/html; charset=UTF-8", null);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.articledetail_menu_, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_post) {
+            ToastUtil.showLong(this,"Post");
+        }else if (id == R.id.action_share){
+            //Intent intent = new Intent(getApplicationContext(),AboutActivity.class);
+            //startActivity(intent);
+            ToastUtil.showLong(this,"Share");
+        }else if (id == android.R.id.home){
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 
 
 }

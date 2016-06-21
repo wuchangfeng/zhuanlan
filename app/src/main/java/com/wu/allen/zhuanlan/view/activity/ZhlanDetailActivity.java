@@ -39,7 +39,7 @@ public class ZhlanDetailActivity extends BaseActivity {
 
     private static final String TAG = "ZhlanDetailActivity";
     private Toolbar toolbar;
-    private String slug,title,name,articeSlug,titleImage;
+    private String slug,title,name,articeSlug,titleImage,profileUrl;
     private EasyRecyclerView recyclerView;
     private List<Article> articleList;
     private ArticleAdapter articleAdapter;
@@ -66,6 +66,7 @@ public class ZhlanDetailActivity extends BaseActivity {
         Intent intent = getIntent();
         slug = intent.getStringExtra("slug");
         title = intent.getStringExtra("title");
+        profileUrl = intent.getStringExtra("profile_url");
     }
     // initView
     public void initView() {
@@ -130,13 +131,12 @@ public class ZhlanDetailActivity extends BaseActivity {
             titleImage = article.get(i).getTitleImage();
             // no data why?
             String sumary = article.get(i).getSummary();
-            Log.e(TAG,"Sumary"+sumary);
             int commentsCount = article.get(i).getCommentsCount();
             // no use
             int likesCount =article.get(i).getLikeCount();
             articeSlug = article.get(i).getSlug();
             Article articleItem = new Article(title,titleImage,content
-                    ,sumary,commentsCount,likesCount,slug,articeSlug);
+                    ,sumary,commentsCount,likesCount,slug,articeSlug,profileUrl);
             articleList.add(articleItem);
         }
         return articleList;

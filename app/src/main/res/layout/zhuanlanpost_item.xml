@@ -25,7 +25,6 @@
                 android:id="@+id/profile_image"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/logo"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_centerInParent="true"
@@ -74,6 +73,7 @@
             android:id="@+id/iv_articlebg"
             android:layout_width="match_parent"
             android:layout_height="184dp"
+            android:scaleType="centerCrop"
             />
 
         <TextView

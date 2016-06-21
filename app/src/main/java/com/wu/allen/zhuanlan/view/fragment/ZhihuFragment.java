@@ -19,7 +19,6 @@ import android.view.animation.CycleInterpolator;
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.wu.allen.zhuanlan.R;
-import com.wu.allen.zhuanlan.adapter.GirlAdapter;
 import com.wu.allen.zhuanlan.adapter.ZhuanLanAdapter;
 import com.wu.allen.zhuanlan.model.ZhuanLan;
 import com.wu.allen.zhuanlan.net.Network;
@@ -29,7 +28,6 @@ import java.util.List;
 import java.util.Random;
 
 import rx.Subscriber;
-import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
@@ -54,13 +52,13 @@ public class ZhihuFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ids = TopicData.music_film_ids;
+        ids = TopicData.default_ids;
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment_zhuanlan_layout, container, false);
         initView(view);
         return view;
     }
@@ -112,6 +110,7 @@ public class ZhihuFragment extends BaseFragment {
                 Intent intent = new Intent(getActivity(),ZhlanDetailActivity.class);
                 intent.putExtra("slug",adapter.getItem(position).getSlug());
                 intent.putExtra("title",adapter.getItem(position).getName());
+                intent.putExtra("profile_url",adapter.getItem(position).getCreator().getProfileUrl());
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle());
             }
         });

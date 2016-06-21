@@ -27,7 +27,7 @@ public class ZhuanLanViewHolder extends BaseViewHolder<ZhuanLan> {
     public ZhuanLanViewHolder(ViewGroup parent) {
         super(parent, R.layout.zhuanlan_item);
         imageView = $(R.id.profile_image);
-        //tvName = $(R.id.name);
+        tvName = $(R.id.name);
         tvArticleCount = $(R.id.tv_article_count);
         tvFansCount = $(R.id.tv_fans_count);
         tvIntro = $(R.id.intro);
@@ -44,6 +44,7 @@ public class ZhuanLanViewHolder extends BaseViewHolder<ZhuanLan> {
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(imageView);
+        tvName.setText(data.getName());
         tvIntro.setText(data.getDescription());
         tvFansCount.setText(data.getFollowersCount() + "人关注");
         tvArticleCount.setText(data.getPostsCount() + "篇文章");

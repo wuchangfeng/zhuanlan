@@ -9,6 +9,7 @@ public class Article {
         private String titleImage;
         private String summary;
         private String content;
+        private String profileUrl;
         private int commentsCount;
         private int likeCount;
         private String slug;
@@ -17,7 +18,7 @@ public class Article {
 
 
     public Article(String title, String titleImage, String summary, String content, int commentsCount,
-                   int likeCount, String slug,String articleSlug) {
+                   int likeCount, String slug,String articleSlug,String profileUrl) {
         this.title = title;
         this.titleImage = titleImage;
         this.summary = summary;
@@ -26,6 +27,7 @@ public class Article {
         this.likeCount = likeCount;
         this.slug = slug;
         this.articleSlug = articleSlug;
+        this.profileUrl = profileUrl;
     }
 
     public String getArticleSlug() {
@@ -89,6 +91,14 @@ public class Article {
 
     public void setSlug(String slug) {
         this.slug = slug;
+    }
+
+    public String getProfileUrl() {
+        return profileUrl;
+    }
+
+    public void setProfileUrl(String profileUrl) {
+        this.profileUrl = profileUrl;
     }
 
 

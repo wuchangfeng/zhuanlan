@@ -6,8 +6,8 @@ package com.wu.allen.zhuanlan.util;
 // Beacause of ZHihu API,some constant write here
 public class TopicData {
 
-    public static String  music_film_ids[] = {"zhimovie","Battlestar","tianmaying","48zhen",
-    "nordenbox","classicalmusic","DKLearnsPop","klexraxmusic","1song","dingj"};
+    public static String  default_ids[] = {"beasleynation","Battlestar","bigertech","48zhen",
+    "nordenbox","android-weekly","kaede","klexraxmusic","grapeot","dingj"};
 
     public static String  psychology_ids[] = {"gooseeker","happy","psychology","jiandanxinli",
             "lengai","career","aiqing","knowyourself"};

@@ -6,7 +6,8 @@
     <string name="girl">妹子</string>
 
     <string name="action_save">保存</string>
-    <string name="action_share">分享</string>、
+    <string name="action_share">分享</string>
+    <string name="action_post">评论</string>、
     <string name="dialog_title">ToDo</string>
 
     <string name="app_about">个人一个练手 App,主要学习 RxJava 和 Retrofit 以及基于 RxJava 的缓存技术以及一些常用开源库的使用。\n</string>
