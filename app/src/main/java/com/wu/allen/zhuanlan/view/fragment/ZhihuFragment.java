@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.CycleInterpolator;
+import android.widget.LinearLayout;
 
 import com.jude.easyrecyclerview.EasyRecyclerView;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
@@ -22,6 +23,7 @@ import com.wu.allen.zhuanlan.R;
 import com.wu.allen.zhuanlan.adapter.ZhuanLanAdapter;
 import com.wu.allen.zhuanlan.model.ZhuanLan;
 import com.wu.allen.zhuanlan.net.Network;
+import com.wu.allen.zhuanlan.util.NetWorkUtil;
 import com.wu.allen.zhuanlan.util.TopicData;
 import com.wu.allen.zhuanlan.view.activity.ZhlanDetailActivity;
 import java.util.List;
@@ -39,6 +41,7 @@ public class ZhihuFragment extends BaseFragment {
     private static final String TAG = "ZhihuFragment";
     private EasyRecyclerView recyclerView;
     private List<ZhuanLan> zhuanLanList;
+    private LinearLayout noNetLayout;
     private ZhuanLanAdapter zhuanLanAdapter;
     private String title;
     private int page = 1;
@@ -51,8 +54,8 @@ public class ZhihuFragment extends BaseFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         ids = TopicData.default_ids;
+
     }
 
     @Nullable
@@ -60,6 +63,10 @@ public class ZhihuFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_zhuanlan_layout, container, false);
         initView(view);
+        if(!NetWorkUtil.isNetworkConnected(getActivity())){
+            noNetLayout.setVisibility(View.VISIBLE);
+        }
+
         return view;
     }
     // initView
@@ -79,7 +86,7 @@ public class ZhihuFragment extends BaseFragment {
             }
         });
 
-        //girlList = new ArrayList<>();
+        noNetLayout = (LinearLayout) view.findViewById(R.id.no_network);
         recyclerView = (EasyRecyclerView) view.findViewById(R.id.recycler_view);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setItemAnimator(new DefaultItemAnimator());
