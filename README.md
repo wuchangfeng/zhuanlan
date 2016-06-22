@@ -18,6 +18,7 @@
 * 1.0.0 first publish
 * 1.0.1 fix bug & add todo list 
 * 1.0.2 add profile_url & name in ZhlanDetailActivity & add statement in Aboutactivity & change desc in GirlActivity
+* 1.0.5 all changes you can see in the below picture. 
 
 ## ScreenShot
 **[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
