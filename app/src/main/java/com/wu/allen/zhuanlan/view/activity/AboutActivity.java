@@ -24,7 +24,7 @@ public class AboutActivity extends BaseActivity {
         //CollapsingToolbarLayout
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("关于");
+        //collapsingToolbar.setTitle("关于");
 
     }
 }

@@ -1,13 +1,16 @@
-<android.support.design.widget.CoordinatorLayout
+<com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:padding_status="false">
     <com.jude.easyrecyclerview.EasyRecyclerView
         android:id="@+id/recycler_view"
         app:scrollbarStyle="insideOverlay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:margin_status="true" >
     </com.jude.easyrecyclerview.EasyRecyclerView>
 
-</android.support.design.widget.CoordinatorLayout>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout>

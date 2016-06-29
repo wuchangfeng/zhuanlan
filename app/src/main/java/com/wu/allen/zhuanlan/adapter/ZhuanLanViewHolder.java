@@ -42,6 +42,7 @@ public class ZhuanLanViewHolder extends BaseViewHolder<ZhuanLan> {
         Glide.with(getContext())
                 .load("https://pic2.zhimg.com/" + data.getAvatar().getId()  + "_m.jpg")
                 .centerCrop()
+                .error(R.drawable.logo)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(imageView);
         tvName.setText(data.getName());

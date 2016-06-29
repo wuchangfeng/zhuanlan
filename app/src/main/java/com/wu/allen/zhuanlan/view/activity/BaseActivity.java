@@ -1,11 +1,17 @@
 package com.wu.allen.zhuanlan.view.activity;
 
 import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
@@ -18,9 +24,12 @@ import com.wu.allen.zhuanlan.util.ToastUtil;
 public class BaseActivity extends AppCompatActivity implements SwipeRefreshLayout
         .OnRefreshListener,RecyclerArrayAdapter.OnLoadMoreListener{
 
-    public void onCreate(){}
+    @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        //initView();
+    }
 
-    public void initView(){}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

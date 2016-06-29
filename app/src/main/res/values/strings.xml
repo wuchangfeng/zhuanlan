@@ -10,6 +10,7 @@
     <string name="action_post">评论</string>、
     <string name="dialog_title">ToDo</string>
 
+    <string name="app_intro">ZhuanLan Meizhi\nGitHub:https://github.com/wuchangfeng/ZhuanLan</string>
     <string name="app_about">个人一个练手 App,主要学习 RxJava 和 Retrofit 以及基于 RxJava 的缓存技术以及一些常用开源库的使用。\n</string>
     <string name="data_state">App 中的知乎专栏 API 为并非由知乎官方提供，侵权删。妹子图的 API 来自 Gank.io。\n感谢。</string>
     <string name="open_source">开源库:\nrxjava\nretrofit\nokhttp\nPhotoView\nglide\neasyrecyclerview\ncom.nispok:snackbar\nom.afollestad.material-dialogs</string>

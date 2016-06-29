@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.wu.allen.zhuanlan.view.activity.ZhlanDetailActivity">
+    app:padding_status="false">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:margin_status="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
@@ -18,12 +19,9 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            />
+             />
 
     </android.support.design.widget.AppBarLayout>
-
 
 
     <com.jude.easyrecyclerview.EasyRecyclerView
@@ -35,4 +33,5 @@
     </com.jude.easyrecyclerview.EasyRecyclerView>
 
 
-</android.support.design.widget.CoordinatorLayout>
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout>

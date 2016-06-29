@@ -1,18 +1,12 @@
 package com.wu.allen.zhuanlan.view.activity;
 
 
-import android.animation.Animator;
-import android.animation.AnimatorInflater;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
-import android.view.animation.CycleInterpolator;
 
 import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
@@ -23,7 +17,6 @@ import com.wu.allen.zhuanlan.view.fragment.GirlFragment;
 import com.wu.allen.zhuanlan.view.fragment.ZhihuFragment;
 
 import java.util.List;
-import java.util.Random;
 
 public class MainActivity extends BaseActivity {
     private static final String TAG = "MainActivity";

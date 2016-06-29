@@ -1,9 +1,10 @@
-<android.support.design.widget.CoordinatorLayout
+<com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    app:padding_status="false">
     <LinearLayout
         android:id="@+id/no_network"
         android:orientation="vertical"
@@ -33,6 +34,7 @@
     <com.jude.easyrecyclerview.EasyRecyclerView
         android:id="@+id/recycler_view"
         app:scrollbarStyle="insideOverlay"
+        app:margin_status="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.jude.easyrecyclerview.EasyRecyclerView>
@@ -44,8 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
+        app:margin_navigation="true"
         app:layout_anchor="@id/recycler_view"
         app:layout_anchorGravity="bottom|right|end"
         app:layout_behavior="com.wu.allen.zhuanlan.util.ScrollAwareFABBehavior"/>
 
-</android.support.design.widget.CoordinatorLayout>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsFrameLayout>

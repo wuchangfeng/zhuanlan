@@ -1,4 +1,4 @@
-package com.wu.allen.zhuanlan.util;
+package com.wu.allen.zhuanlan.widget;
 
 import android.content.Context;
 import android.os.Build;
