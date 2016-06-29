@@ -24,12 +24,12 @@
 **[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
 **截图不是最新版本,最新版本会及时在 Smaple 中发布**
 
-![](http://7xrl8j.com1.z0.glb.clouddn.com/10.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/12.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/11.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/15.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/16.png)
-![](http://7xrl8j.com1.z0.glb.clouddn.com/17.png)
+![zhuanlan6.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan6.png)
+![zhuanlan5.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan5.png)
+![zhuanlan1.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan1.png)
+![zhuanlan4.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan4.png)
+![zhuanlan3.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan3.png)
+![zhuanlan2.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan2.png)
 
 
 
