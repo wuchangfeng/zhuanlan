@@ -19,9 +19,10 @@
 * 1.0.1 fix bug & add todo list 
 * 1.0.2 add profile_url & name in ZhlanDetailActivity & add statement in Aboutactivity & change desc in GirlActivity
 * 1.0.5 all changes you can see in the below picture. 
+* 1.0.6 change something in app structe and navigation bar is trunslate. 
 
 ## ScreenShot
-**[高清无码大图戳这里](https://github.com/wuchangfeng/ZhuanLan/tree/master/ScreenShot)**
+
 **截图不是最新版本,最新版本会及时在 Smaple 中发布**
 
 ![zhuanlan6.png](http://7xrl8j.com1.z0.glb.clouddn.com/zhuanlan3.png)
